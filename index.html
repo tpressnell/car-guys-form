@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <form>
+            <div>
+                <label>General Information</label>
+                <br>
+                <br>
+                <label for="date">Date: </label>
+                <input type="date" id="date" name="date">
+                <br>
+                <br>
+                <label for="cgname">Your Name: </label>
+                <input type="text" id="cgname" name="cgname">
+                <br>
+                <br>
+                <label for="oname">Owner's Name: </label>
+                <input type="text" id="oname" name="oname">
+                <br>
+                <br>
+                <label for="carinfo">Year/Make/Model: </label>
+                <input type="text" id="carinfo" name = carinfo>
+                <br>
+                <br>
+                <label for="complaints">Owner States: </label>
+                <textarea id="complaints" name="complaints"></textarea>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+            <div>
+                <label>Fluids</label>
+                <br>
+                <br>
+                <select id="engineoil" name="engineoil">
+                    <option>OK</option>
+                    <option>Bad</option>
+                    <option>Fixed</option>
+                    <option>N/A</option>
+                </select>
+                <label for="engineoil">Engine Oil</label>
+                <br>
+                <br>
+                <select id="transmissionfluid" name="transmissionfluid">
+                    <option>OK</option>
+                    <option>Bad</option>
+                    <option>Fixed</option>
+                    <option>N/A</option>
+                </select>
+                <label for="transmissionfluid">Transmission Fluid</label>
+                <br>
+                <br>
+                <select id="psfluid" name="psfluid">
+                    <option>OK</option>
+                    <option>Bad</option>
+                    <option>Fixed</option>
+                    <option>N/A</option>
+                </select>
+                <label for="psfluid">Power Steering Fluid</label>
+                <br>
+                <br>
+                <select id="coolant" name="coolant">
+                    <option>OK</option>
+                    <option>Bad</option>
+                    <option>Fixed</option>
+                    <option>N/A</option>
+                </select>
+                <label for="coolant">Coolant</label>
+                <br>
+                <br>
+                <select id="brakefluid" name="brakefluid">
+                    <option>OK</option>
+                    <option>Bad</option>
+                    <option>Fixed</option>
+                    <option>N/A</option>
+                </select>
+                <label for="brakefluid">Brake Fluid</label>
+                <br>
+                <br>
+                <select id="washerfluid" name="washerfluid">
+                    <option>OK</option>
+                    <option>Bad</option>
+                    <option>Fixed</option>
+                    <option>N/A</option>
+                </select>
+                <label for="washerfluid">Washer Fluid</label>
+                <br>
+                <br>
+            </div>
+            <div>
+                <label>Steering</label>
+                <br>
+                <br>
+                <select id="steeringrack" name="steeringrack">
+                    <option>OK</option>
+                    <option>Bad</option>
+                    <option>Fixed</option>
+                    <option>N/A</option>
+                </select>
+                <label for="steeringrack">Steering Rack</label>
+                <br>
+                <br>
+                <select id="tierod_ds" name="tierod_ds">
+                    <option>OK</option>
+                    <option>Bad</option>
+                    <option>Fixed</option>
+                    <option>N/A</option>
+                </select>
+                <label for="tierod_ds">Tie Rod - Driver Side</label>
+                <br>
+                <br>
+                <select id="tierod_ps" name="tierod_ps">
+                    <option>OK</option>
+                    <option>Bad</option>
+                    <option>Fixed</option>
+                    <option>N/A</option>
+                </select>
+                <label for="tierod_ps">Tie Rod - Passenger Side</label>
+                <br>
+                <br>
+                <select id="swaybarendlinks" name="swaybarendlinks">
+                    <option>OK</option>
+                    <option>Bad</option>
+                    <option>Fixed</option>
+                    <option>N/A</option>
+                </select>
+                <label for="swaybarendlinks">Sway Bar End Links</label>
+                <br>
+                <br>
+                <select id="balljoints_ds" name="balljoints_ds">
+                    <option>OK</option>
+                    <option>Bad</option>
+                    <option>Fixed</option>
+                    <option>N/A</option>
+                </select>
+                <label for="balljoints_ds">Ball Joints - Driver Side</label>
+                <br>
+                <br>
+                <select id="balljoints_ps" name="balljoints_ps">
+                    <option>OK</option>
+                    <option>Bad</option>
+                    <option>Fixed</option>
+                    <option>N/A</option>
+                </select>
+                <label for="balljoints_ps">Ball Joints - Passenger Side</label>
+                <br>
+                <br>
+            </div>
+            <div>
+                <label>Front Suspension</label>
+                <br>
+                <br>
+                <select id="shock_strut_ds" name="shock_strut_ds">
+                    <option>OK</option>
+                    <option>Bad</option>
+                    <option>Fixed</option>
+                    <option>N/A</option>
+                </select>
+                <label for="shock_strut_ds">Shock/Strut - Driver Side</label>
+                <br>
+                <br>
+                <select id="shock_strut_ps" name="shock_strut_ps">
+                    <option>OK</option>
+                    <option>Bad</option>
+                    <option>Fixed</option>
+                    <option>N/A</option>
+                </select>
+                <label for="shock_strut_ps">Shock/Strut - Passenger Side</label>
+                <br>
+                <br>
+                <select id="coilspring_ds" name="coilspring_ds">
+                    <option>OK</option>
+                    <option>Bad</option>
+                    <option>Fixed</option>
+                    <option>N/A</option>
+                </select>
+                <label for="coilspring_ds">Coil Spring - Driver Side</label>
+                <br>
+                <br>
+                <select id="coilspring_ps" name="coilspring_ps">
+                    <option>OK</option>
+                    <option>Bad</option>
+                    <option>Fixed</option>
+                    <option>N/A</option>
+                </select>
+                <label for="coilspring_ps">Coil Spring - Passenger Side</label>
+                <br>
+                <br>
+            </div>
+            <div>
+                <label>Rear Suspension</label>
+                <br>
+                <br>
+                <select id="rshock_strut_ds" name="rshock_strut_ds">
+                    <option>OK</option>
+                    <option>Bad</option>
+                    <option>Fixed</option>
+                    <option>N/A</option>
+                </select>
+                <label for="rshock_strut_ds">Shock/Strut - Driver Side</label>
+                <br>
+                <br>
+                <select id="rshock_strut_ps" name="rshock_strut_ps">
+                    <option>OK</option>
+                    <option>Bad</option>
+                    <option>Fixed</option>
+                    <option>N/A</option>
+                </select>
+                <label for="rshock_strut_ps">Shock/Strut - Passenger Side</label>
+                <br>
+                <br>
+                <select id="rcoilspring_ds" name="rcoilspring_ds">
+                    <option>OK</option>
+                    <option>Bad</option>
+                    <option>Fixed</option>
+                    <option>N/A</option>
+                </select>
+                <label for="rcoilspring_ds">Coil Spring - Driver Side</label>
+                <br>
+                <br>
+                <select id="rcoilspring_ps" name="rcoilspring_ps">
+                    <option>OK</option>
+                    <option>Bad</option>
+                    <option>Fixed</option>
+                    <option>N/A</option>
+                </select>
+                <label for="rcoilspring_ps">Coil Spring - Passenger Side</label>
+                <br>
+                <br>
+            </div>
+            <div>
+                <label>Brakes</label>
+                <br>
+                <br>
+                <select id="rotor_fds" name="rotor_fds">
+                    <option>OK</option>
+                    <option>Bad</option>
+                    <option>Fixed</option>
+                    <option>N/A</option>
+                </select>
+                <label for="rotor_fds">Rotor - Front Driver Side</label>
+                <br>
+                <br>
+                <select id="rotor_fps" name="rotor_fps">
+                    <option>OK</option>
+                    <option>Bad</option>
+                    <option>Fixed</option>
+                    <option>N/A</option>
+                </select>
+                <label for="rotor_fps">Rotor - Front Passenger Side</label>
+                <br>
+                <br>
+                <select id="drum_rotor_rds" name="drum_rotor_rds">
+                    <option>OK</option>
+                    <option>Bad</option>
+                    <option>Fixed</option>
+                    <option>N/A</option>
+                </select>
+                <label for="drum_rotor_rds">Drum/Rotor - Rear Driver Side</label>
+                <br>
+                <br>
+                <select id="drum_rotor_rps" name="drum_rotor_rps">
+                    <option>OK</option>
+                    <option>Bad</option>
+                    <option>Fixed</option>
+                    <option>N/A</option>
+                </select>
+                <label for="drum_rotor_rps">Drum/Rotor - Rear Passenger Side</label>
+                <br>
+                <br>
+                <select id="pads_fds" name="pads_fds">
+                    <option>OK</option>
+                    <option>Bad</option>
+                    <option>Fixed</option>
+                    <option>N/A</option>
+                </select>
+                <label for="pads_fds">Brake Pads - Front Driver Side</label>
+                <br>
+                <br>
+                <select id="pads_fps" name="pads_fps">
+                    <option>OK</option>
+                    <option>Bad</option>
+                    <option>Fixed</option>
+                    <option>N/A</option>
+                </select>
+                <label for="pads_fps">Brake Pads - Front Passenger Side</label>
+                <br>
+                <br>
+                <select id="pads_shoes_rds" name="pads_shoes_rds">
+                    <option>OK</option>
+                    <option>Bad</option>
+                    <option>Fixed</option>
+                    <option>N/A</option>
+                </select>
+                <label for="pads_shoes_rds">Brake Pads/Shoes - Rear Driver Side</label>
+                <br>
+                <br>
+                <select id="pads_shoes_rps" name="pads_shoes_rps">
+                    <option>OK</option>
+                    <option>Bad</option>
+                    <option>Fixed</option>
+                    <option>N/A</option>
+                </select>
+                <label for="pads_shoes_rps">Brake Pads/Shoes - Rear Passenger Side</label>
+                <br>
+                <br>
+            </div>
+            <div>
+                <label>Tires/Wheels</label>
+                <br>
+                <br>
+                <select id="wheel_fds" name="wheel_fds">
+                    <option>OK</option>
+                    <option>Bad</option>
+                    <option>Fixed</option>
+                    <option>N/A</option>
+                </select>
+                <label for="wheel_fds">Wheel - Front Driver Side</label>
+                <br>
+                <br>
+                <select id="wheel_fps" name="wheel_fps">
+                    <option>OK</option>
+                    <option>Bad</option>
+                    <option>Fixed</option>
+                    <option>N/A</option>
+                </select>
+                <label for="wheel_fps">Wheel - Front Passenger Side</label>
+                <br>
+                <br>
+                <select id="wheel_rds", name="wheel_rds">
+                    <option>OK</option>
+                    <option>Bad</option>
+                    <option>Fixed</option>
+                    <option>N/A</option>
+                </select>
+                <label for="wheel_rds">Wheel - Rear Driver Side</label>
+                <br>
+                <br>
+                <select id="wheel_rps" name="wheel_rps">
+                    <option>OK</option>
+                    <option>Bad</option>
+                    <option>Fixed</option>
+                    <option>N/A</option>
+                </select>
+                <label for="wheel_rps">Wheel - Rear Passenger Side</label>
+                <br>
+                <br>
+                <select id="tire_fds" name="tire_fds">
+                    <option>OK</option>
+                    <option>Bad</option>
+                    <option>Fixed</option>
+                    <option>N/A</option>
+                </select>
+                <label for="tire_fds">Tire - Front Driver Side</label>
+                <br>
+                <br>
+                <select id="tire_fps" name="tire_fps">
+                    <option>OK</option>
+                    <option>Bad</option>
+                    <option>Fixed</option>
+                    <option>N/A</option>
+                </select>
+                <label for="tire_fps">Tire - Front Passenger Side</label>
+                <br>
+                <br>
+                <select id="tire_rds" name="tire_rds">
+                    <option>OK</option>
+                    <option>Bad</option>
+                    <option>Fixed</option>
+                    <option>N/A</option>
+                </select>
+                <label for="tire_rds">Tire - Rear Driver Side</label>
+                <br>
+                <br>
+                <select id="tire_rps" name="tire_rps">
+                    <option>OK</option>
+                    <option>Bad</option>
+                    <option>Fixed</option>
+                    <option>N/A</option>
+                </select>
+                <label for="tire_rps">Tire - Rear Passenger Side</label>
+                <br>
+                <br>
+            </div>
+            <div>
+                <label for="eec">Engine Error Codes</label>
+                <textarea id="eec" name="eec"></textarea>
+            </div>
+            <div>
+                <label for="notes">Notes</label>
+                <textarea id="notes" name="notes"></textarea>
+            </div>
+        </form>
+    </body>
+</html>
