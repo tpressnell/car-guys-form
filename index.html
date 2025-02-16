@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="carguys.css">
     </head>
     <body>
         <form>
             <div>
-                <label>General Information</label>
+                <label class="sectionheader">General Information</label>
                 <br>
                 <br>
                 <label for="date">Date: </label>
@@ -24,7 +25,9 @@
                 <input type="text" id="carinfo" name = carinfo>
                 <br>
                 <br>
-                <label for="complaints">Owner States: </label>
+                <div class="textarea">
+                    <label for="complaints" class="textarea">Owner States: </label>
+                </div>
                 <textarea id="complaints" name="complaints"></textarea>
                 <br>
                 <br>
@@ -32,7 +35,7 @@
                 <br>
             </div>
             <div>
-                <label>Fluids</label>
+                <label class="sectionheader">Fluids</label>
                 <br>
                 <br>
                 <select id="engineoil" name="engineoil">
@@ -89,9 +92,11 @@
                 <label for="washerfluid">Washer Fluid</label>
                 <br>
                 <br>
+                <br>
+                <br>
             </div>
             <div>
-                <label>Steering</label>
+                <label class="sectionheader">Steering</label>
                 <br>
                 <br>
                 <select id="steeringrack" name="steeringrack">
@@ -148,9 +153,11 @@
                 <label for="balljoints_ps">Ball Joints - Passenger Side</label>
                 <br>
                 <br>
+                <br>
+                <br>
             </div>
             <div>
-                <label>Front Suspension</label>
+                <label class="sectionheader">Front Suspension</label>
                 <br>
                 <br>
                 <select id="shock_strut_ds" name="shock_strut_ds">
@@ -189,9 +196,11 @@
                 <label for="coilspring_ps">Coil Spring - Passenger Side</label>
                 <br>
                 <br>
+                <br>
+                <br>
             </div>
             <div>
-                <label>Rear Suspension</label>
+                <label class="sectionheader">Rear Suspension</label>
                 <br>
                 <br>
                 <select id="rshock_strut_ds" name="rshock_strut_ds">
@@ -230,9 +239,11 @@
                 <label for="rcoilspring_ps">Coil Spring - Passenger Side</label>
                 <br>
                 <br>
+                <br>
+                <br>
             </div>
             <div>
-                <label>Brakes</label>
+                <label class="sectionheader">Brakes</label>
                 <br>
                 <br>
                 <select id="rotor_fds" name="rotor_fds">
@@ -307,9 +318,11 @@
                 <label for="pads_shoes_rps">Brake Pads/Shoes - Rear Passenger Side</label>
                 <br>
                 <br>
+                <br>
+                <br>
             </div>
             <div>
-                <label>Tires/Wheels</label>
+                <label class="sectionheader">Tires/Wheels</label>
                 <br>
                 <br>
                 <select id="wheel_fds" name="wheel_fds">
@@ -384,13 +397,23 @@
                 <label for="tire_rps">Tire - Rear Passenger Side</label>
                 <br>
                 <br>
+                <br>
+                <br>
             </div>
             <div>
-                <label for="eec">Engine Error Codes</label>
+                <div>
+                    <label for="eec" class="sectionheader">Engine Error Codes</label>
+                </div>
                 <textarea id="eec" name="eec"></textarea>
+                <br>
+                <br>
+                <br>
+                <br>
             </div>
             <div>
-                <label for="notes">Notes</label>
+                <div>
+                    <label for="notes" class="sectionheader">Notes</label>
+                </div>
                 <textarea id="notes" name="notes"></textarea>
             </div>
         </form>
