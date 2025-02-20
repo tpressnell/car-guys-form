@@ -53,7 +53,6 @@ $notes = htmlspecialchars($_POST["notes"]);
 echo "Your name is: " . $cgname;
 ?>
 
-<a href="mailto:tyler.pressnell86@gmail.com">Send an email</a>
 
 </body>
 </html>
