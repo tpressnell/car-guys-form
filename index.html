@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="carguys.css">
     </head>
     <body>
-        <form>
+        <form action="server/formhandler.php" method="post">
             <div>
                 <label class="sectionheader">General Information</label>
                 <br>
@@ -17,8 +17,16 @@
                 <input type="text" id="cgname" name="cgname">
                 <br>
                 <br>
+                <label for="cgemail">Your Email: </label>
+                <input type="email" id="cgemail" name="cgemail">
+                <br>
+                <br>
                 <label for="oname">Owner's Name: </label>
                 <input type="text" id="oname" name="oname">
+                <br>
+                <br>
+                <label for="oemail">Owner's Email: </label>
+                <input type="email" id="oemail" name="oemail">
                 <br>
                 <br>
                 <label for="carinfo">Year/Make/Model: </label>
@@ -415,6 +423,12 @@
                     <label for="notes" class="sectionheader">Notes</label>
                 </div>
                 <textarea id="notes" name="notes"></textarea>
+            </div>
+            <div>
+                <br>
+                <br>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
             </div>
         </form>
     </body>
