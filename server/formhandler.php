@@ -1,10 +1,11 @@
 <html>
 <body>
 
-<h1>My first PHP page</h1>
+<h1></h1>
 
 <?php
 
+$date = htmlspecialchars($_POST["date"]);
 $cgname = htmlspecialchars($_POST["cgname"]);
 $cgemail = htmlspecialchars($_POST["cgemail"]);
 $oname = htmlspecialchars($_POST["oname"]);
@@ -44,13 +45,136 @@ $wheel_fps = htmlspecialchars($_POST["wheel_fps"]);
 $wheel_rds = htmlspecialchars($_POST["wheel_rds"]);
 $wheel_rps = htmlspecialchars($_POST["wheel_rps"]);
 $tire_fds = htmlspecialchars($_POST["tire_fds"]);
-$tire_fds = htmlspecialchars($_POST["tire_fps"]);
-$tire_fds = htmlspecialchars($_POST["tire_rds"]);
-$tire_fds = htmlspecialchars($_POST["tire_rps"]);
+$tire_fps = htmlspecialchars($_POST["tire_fps"]);
+$tire_rds = htmlspecialchars($_POST["tire_rds"]);
+$tire_rps = htmlspecialchars($_POST["tire_rps"]);
 $eec = htmlspecialchars($_POST["eec"]);
 $notes = htmlspecialchars($_POST["notes"]);
- 
-echo "Your name is: " . $cgname;
+?>
+
+<h1>Car Report Preview</h1>
+<?php 
+echo "Date: " . $date;
+echo "<br>";
+echo "Your name: " . $cgname;
+echo "<br>";
+echo "Owner's name: " . $oname;
+echo "<br>";
+echo "Owner's email: " . $oemail;
+echo "<br>";
+echo "Car Year/Make/Model: " . $carinfo;
+echo "<br>";
+echo "Owner states: " . $complaints;
+echo "<br>";
+echo "<br>";
+echo "FLUIDS";
+echo "<br>";
+echo "<br>";
+echo "Engine Oil: " . $engineoil;
+echo "<br>";
+echo "Transmission Fluid: " . $transmissionfluid;
+echo "<br>";
+echo "Power Steering Fluid: " . $psfluid;
+echo "<br>";
+echo "Coolant: " . $coolant;
+echo "<br>";
+echo "Brake Fluid: " . $brakefluid;
+echo "<br>";
+echo "Washer Fluid Level: " . $washerfluid;
+echo "<br>";
+echo "<br>";
+echo "STEERING";
+echo "<br>";
+echo "<br>";
+echo "Steering Rack: " . $steeringrack;
+echo "<br>";
+echo "Driver Side Tie Rod: " . $tierod_ds;
+echo "<br>";
+echo "Passenger Side Tie Rod: " . $tierod_ps;
+echo "<br>";
+echo "Sway Bar End Links: " . $swaybarendlinks;
+echo "<br>";
+echo "Driver Side Ball Joints: " . $balljoints_ds;
+echo "<br>";
+echo "Passenger Side Ball Joints: " . $balljoints_ps;
+echo "<br>";
+echo "<br>";
+echo "FRONT SUSPENSION";
+echo "<br>";
+echo "<br>";
+echo "Driver Side Shock/Strut: " . $shock_strut_ds;
+echo "<br>";
+echo "Passenger Side Shock/Strut: " . $shock_strut_ps;
+echo "<br>";
+echo "Driver Side Coil Spring: " . $coilspring_ds;
+echo "<br>";
+echo "Passenger Side Coil Spring: " . $coilspring_ps;
+echo "<br>";
+echo "<br>";
+echo "REAR SUSPENSION";
+echo "<br>";
+echo "<br>";
+echo "Driver Side Shock/Strut: " . $rshock_strut_ds;
+echo "<br>";
+echo "Passenger Side Shock/Strut: " . $rshock_strut_rs;
+echo "<br>";
+echo "Driver Side Coil Spring: " . $rcoilspring_ds;
+echo "<br>";
+echo "Passenger Side Coil Spring: " . $rcoilspring_ps;
+echo "<br>";
+echo "<br>";
+echo "BRAKES";
+echo "<br>";
+echo "<br>";
+echo "Front Driver Side Rotor: " . $rotor_fds;
+echo "<br>";
+echo "Front Passenger Side Rotor: " . $rotor_fps;
+echo "<br>";
+echo "Rear Driver Side Drum/Rotor: " . $drum_rotor_rds;
+echo "<br>";
+echo "Rear Passenger Side Drum/Rotor: " . $drum_rotor_rps;
+echo "<br>";
+echo "Front Driver Side Brake Pads: " . $pads_fds;
+echo "<br>";
+echo "Front Passenger Side Brake Pads: " . $pads_fps; 
+echo "<br>";
+echo "Rear Driver Side Brake Pads/Shoes: " . $pads_shoes_rds;
+echo "<br>";
+echo "Rear Passenger Side Brake Pads/Shoes : " . $pads_shoes_rps;
+echo "<br>";
+echo "<br>";
+echo "TIRES AND WHEELS";
+echo "<br>";
+echo "<br>";
+echo "Front Driver Side Wheel: " . $wheel_fds;
+echo "<br>";
+echo "Front Passenger Side Wheel: " . $wheel_fps;
+echo "<br>";
+echo "Rear Driver Side Wheel: " . $wheel_rds;
+echo "<br>";
+echo "Rear Passenger Side Wheel: " . $wheel_rps;
+echo "<br>";
+echo "Front Driver Side Tire: " . $tire_fds;
+echo "<br>";
+echo "Front Passenger Side Tire: " . $tire_fps;
+echo "<br>";
+echo "Rear Driver Side Tire: " . $tire_rds;
+echo "<br>";
+echo "Rear Passenger Side Tire: " . $tire_rps;
+echo "<br>";
+echo "<br>";
+echo "Engine Error Codes: " . $eec;
+echo "<br>";
+echo "<br>";
+echo "Notes: " . $notes;
+echo "<br>";
+echo "<br>";
+echo "<br>";
+echo "<br>";
+
+echo "To email this report to your friend, please click <a href='mailto:'>here</a>.";
+echo "<br>";
+echo "<br>";
 ?>
 
 
