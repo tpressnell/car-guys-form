@@ -19,7 +19,7 @@ $brakefluid = htmlspecialchars($_POST["brakefluid"]);
 $washerfluid = htmlspecialchars($_POST["washerfluid"]);
 $steeringrack = htmlspecialchars($_POST["steeringrack"]);
 $tierod_ds = htmlspecialchars($_POST["tierod_ds"]);
-$tierod_ps = htmlspecialchars($_POST["tireod_ps"]);
+$tierod_ps = htmlspecialchars($_POST["tierod_ps"]);
 $swaybarendlinks = htmlspecialchars($_POST["swaybarendlinks"]);
 $balljoints_ds = htmlspecialchars($_POST["balljoints_ds"]);
 $balljoints_ps = htmlspecialchars($_POST["balljoints_ps"]);
@@ -118,7 +118,7 @@ $body[] = "<br>";
 $body[] = "<br>";
 $body[] = "Driver Side Shock/Strut: " . $rshock_strut_ds;
 $body[] = "<br>";
-$body[] = "Passenger Side Shock/Strut: " . $rshock_strut_rs;
+$body[] = "Passenger Side Shock/Strut: " . $rshock_strut_ps;
 $body[] = "<br>";
 $body[] = "Driver Side Coil Spring: " . $rcoilspring_ds;
 $body[] = "<br>";
@@ -183,8 +183,9 @@ foreach($body as $text){
 echo $message;
 
 $emailsubject = "$oname $carinfo $date Report";
+$plaintextbody = str_replace("<br>", "%0D%0A", $message);
 
-echo "To email this report to your friend, please click <a href=\"mailto:$oemail?subject=$emailsubject&amp;body=$message\">here</a>.";
+echo "To email this report to your friend, please click <a href=\"mailto:$oemail?subject=$emailsubject&amp;body=$plaintextbody\">here</a>.";
 echo "<br>";
 echo "<br>";
 ?>
